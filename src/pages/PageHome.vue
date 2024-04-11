@@ -11,7 +11,7 @@
       a website, 
       <a 
         target="_blank" rel="noopener noreferrer" 
-        href="mailto:andikawilliam@outlook.com" 
+        href="mailto:andikawilliamv@gmail.com" 
         class="hvr-bounce-to-top mr-1"
       > 
         let's have a chat.
@@ -42,7 +42,7 @@
       <p class="transition duration-300 transform hover:-translate-y-2">
         <a 
           target="_blank" rel="noopener noreferrer" 
-          href="mailto:andikawilliam@outlook.com" 
+          href="mailto:andikawilliamv@gmail.com" 
           class="mr-1"
         >
           Say hello
