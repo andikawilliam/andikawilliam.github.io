@@ -18,17 +18,17 @@
         <div
           class="relative sm:flex h-auto py-2 cursor-pointer transition duration-300 transform hover:opacity-75 hover:-translate-y-1"
         >
-            <div class="sm:w-1/2">
-              <transition appear>
-                <img 
-                  class="w-full h-full background-transparent shadow-lg rounded-lg opacity-75" 
-                  v-bind:src="project.image"
-                  v-bind:alt="project.name"
-                  v-on:load="loadedImage(project)"
-                >
-              </transition>
-            </div>
-          <div class="flex items-center rounded-lg pt-2 pb-4 px-1 sm:px-6">
+          <div class="sm:w-1/2">
+            <transition appear>
+              <img 
+                class="w-full h-full background-transparent shadow-lg rounded-lg opacity-75" 
+                v-bind:src="project.image"
+                v-bind:alt="project.name"
+                v-on:load="loadedImage(project)"
+              >
+            </transition>
+          </div>
+          <div class="w-1/2 flex items-center rounded-lg pt-2 pb-4 px-1 sm:px-6">
             <div>
               <p class="text-base sm:text-lg font-semibold text-white">
                 {{ project.name }}
@@ -72,6 +72,7 @@ import TheLine from '../components/TheLine.vue';
 import CleanprofImage from '../assets/cleanprof-web.png'
 import TemanGaweImage from '../assets/temangawe-web.png'
 import DitoBuwonoImage from '../assets/ditobuwono-web.png'
+import PerCoImage from '../assets/per-web.png'
 
 export default {
   name: 'PagePortfolio',
@@ -81,35 +82,45 @@ export default {
   data () {
     return {
       projects: [
+      {
+          id: 4,
+          name: "PT. PRIMA ENERGY RESOURCES",
+          desc: "Portfolio Website | 2022",
+          link: "https://www.per.co.id/",
+          image: PerCoImage,
+          imageLoaded: false,
+          job: "Design & Development", 
+          stackIcon: "vuejs"
+        },
         {
-          id: 1,
-          name: "Cleanprof.id",
-          desc: "Retailer Website | 2020",
-          link: "https://www.cleanprof.id/",
+          id: 3,
+          name: "Ditobuwono.com",
+          desc: "Portfolio Website | 2021",
+          link: "https://www.ditobuwono.com/",
+          image: DitoBuwonoImage,
+          imageLoaded: false,
+          job: "Design & Development", 
+          stackIcon: "vuejs"
+        },
+        {
+          id: 2,
+          name: "Cleanprof",
+          desc: "Retailer Website | 2021",
+          link: "https://www.cleanprof.netlify.app/",
           image: CleanprofImage,
           imageLoaded: false,
           job: "Development",
           stackIcon: "vuejs",
         },
         {
-          id: 2,
-          name: "TemanGawe.com",
+          id: 1,
+          name: "TemanGawe",
           desc: "Coffee Shop Website | 2020",
-          link: "https://www.temangawe.com/",
+          link: "https://temangawe.netlify.app/",
           image: TemanGaweImage,
           imageLoaded: false,
           job: "Design & Development",
           stackIcon: "react",
-        },
-        {
-          id: 3,
-          name: "Ditobuwono.com",
-          desc: "Portfolio Website | 2020",
-          link: "https://www.ditobuwono.com/",
-          image: DitoBuwonoImage,
-          imageLoaded: false,
-          job: "Design & Development", 
-          stackIcon: "vuejs"
         },
       ]
     }

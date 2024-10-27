@@ -55,16 +55,12 @@ export default {
           name: "Home",
         },
         {
-          id: 2,
-          name: "Stacks",
-        },
-        {
           id: 3,
           name: "Portfolio",
         },
         {
           id: 4,
-          name: "Questions"
+          name: "FAQ"
         },
       ]
     }

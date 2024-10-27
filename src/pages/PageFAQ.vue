@@ -10,10 +10,21 @@
       <TheLine/>
     </div>
 
+    <div class="text-gray-300 font-light tracking-wide pb-4">
+      Looking to build a website ?
+      <a 
+        target="_blank" rel="noopener noreferrer" 
+        href="mailto:andikawilliam@outlook.com" 
+        class="hvr-bounce-to-top mr-1"
+      >
+        Let's chat
+      </a>
+    </div>
+
     <div id="content">
       <transition-group name="slide">
         <div 
-          class="slide-question relative py-4"
+          class="slide-question relative py-2"
           v-for="question in questions" 
           v-bind:key="question.id">
           
@@ -46,16 +57,7 @@
       </transition-group>
     </div>
 
-    <div class="pt-4">
-      Looking to build a website ?
-      <a 
-        target="_blank" rel="noopener noreferrer" 
-        href="mailto:andikawilliam@outlook.com" 
-        class="hvr-bounce-to-top mr-1"
-      >
-        Let's chat
-      </a>
-    </div>
+   
   </div>
 </template>
 
@@ -63,7 +65,7 @@
 import TheLine from '../components/TheLine.vue';
 
 export default {
-  name: 'PageQuestions',
+  name: 'PageFAQ',
   components: {
     TheLine
   },
@@ -72,14 +74,19 @@ export default {
       questions: [
         { 
           id: 1,
-          ask: `"What should I call you?"`,
-          answer:`Usually it's <span class="italic">'Dika'</span>.
-          But <span class="italic">'Andy'</span> works as well`,
+          ask: `What should I call you?`,
+          answer:`Feel free to call me <span class="italic">Andy</span>. It's what most people go with!`,
           showAnswer: false
         },
         { 
           id: 2,
-          ask: `"Do you accept web design projects?"`,
+          ask: `Where are you based?`,
+          answer: `I'm currently based in Jakarta, Indonesia. We're on UTC +7 here, so I might be starting my day when you're heading to bed!`,
+          showAnswer: false
+        },
+        { 
+          id: 3,
+          ask: `Do you accept web design projects?`,
           answer: `Sure!
           <a 
             target="_blank" rel="noopener noreferrer" 
@@ -91,8 +98,8 @@ export default {
           showAnswer: false,
         },
         { 
-          id: 3,
-          ask: `"How much is your rate?"`,
+          id: 4,
+          ask: `How much is your rate?`,
           answer: `Every project is unique. It really depends on the requirements
           you're looking for. <a 
             target="_blank" rel="noopener noreferrer" 
@@ -105,8 +112,8 @@ export default {
           showAnswer: false,
         },
         { 
-          id: 4,
-          ask: `"What is the process?"`,
+          id: 5,
+          ask: `What is the process?`,
           answer: `It depends on the project, but generally we start with a 
           discussion followed by design & prototype. Which after approval, we 
           then move on to development

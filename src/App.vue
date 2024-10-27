@@ -24,13 +24,13 @@ import TheSideBar from './components/TheSideBar.vue';
 import PageHome from './pages/PageHome.vue';
 import PageStacks from './pages/PageStacks.vue';
 import PagePortfolio from './pages/PagePortfolio.vue';
-import PageQuestions from './pages/PageQuestions.vue';
+import PageFAQ from './pages/PageFAQ.vue';
 
 export default {
   name: 'App',
   store,
   components: {
-    TheSideBar, PageHome, PageStacks, PagePortfolio, PageQuestions
+    TheSideBar, PageHome, PageStacks, PagePortfolio, PageFAQ
   },
   data () {
     return {
